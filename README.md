@@ -1,6 +1,6 @@
-Pranachain — AI & Blockchain in Healthcare
-
-🚀 Status: Planning Phase | 📅 Fall 2025
+**Pranachain — AI & Blockchain in Healthcare
+**
+**🚀 Status: Planning Phase | 📅 Fall 2025**
 
 Pranachain is an academic–industry initiative exploring how Artificial Intelligence and Blockchain can be combined to transform healthcare data management and predictive analytics.
 
@@ -12,7 +12,7 @@ AI models provide early insights into conditions like diabetes, heart disease, a
 
 A blockchain-backed ledger ensures transparency, trust, and tamper-proof logging of predictions.
 
-🌍 Why this matters
+**🌍 Why this matters**
 
 Healthcare data is often siloed, insecure, and inaccessible to the people who need it most — patients and practitioners. Pranachain aims to:
 
@@ -22,7 +22,7 @@ Enable trustworthy AI-driven predictions
 
 Provide a transparent, auditable trail of clinical insights
 
-🎯 Project Goals
+**🎯 Project Goals**
 
 Predictive Models
 
@@ -40,7 +40,7 @@ Community Impact
 
 Highlight the role of AI and blockchain in patient empowerment.
 
-📂 Planned Repository Structure
+**📂 Planned Repository Structure**
 
 docs/ — project briefs, problem definition, data sources, ethics notes
 
@@ -54,7 +54,7 @@ reports/ — deliverables (technical report, presentation)
 
 README.md — this file
 
-🛠 Current Phase
+**🛠 Current Phase**
 
 We are in the planning and research stage:
 
@@ -68,7 +68,7 @@ Experiment design
 
 No code has been committed yet — but this repository is the foundation for all future work.
 
-📅 Roadmap (High-Level)
+**📅 Roadmap (High-Level)**
 
 Week 1–2: Define scope, gather datasets, review literature
 
@@ -84,4 +84,4 @@ Abhishek Chakrala — Project Supervisor (Industry Partner)
 Graduate Student Team — University of Windsor, Fall 2025
 
 
-✨ Pranachain is more than a project — it’s a step toward patient-centered, data-driven healthcare.
+**✨ Pranachain is more than a project — it’s a step toward patient-centered, data-driven healthcare.**
