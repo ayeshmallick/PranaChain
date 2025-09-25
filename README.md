@@ -1,2 +1,2 @@
 # PranaChain
-Internship Peoject
+Internship Project
