@@ -1,5 +1,4 @@
-**Pranachain — AI & Blockchain in Healthcare
-**
+**Pranachain — AI & Blockchain in Healthcare**
 **🚀 Status: Planning Phase | 📅 Fall 2025**
 
 Pranachain is an academic–industry initiative exploring how Artificial Intelligence and Blockchain can be combined to transform healthcare data management and predictive analytics.
