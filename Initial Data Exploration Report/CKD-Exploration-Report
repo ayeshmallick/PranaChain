@@ -1,0 +1,26 @@
+CHRONIC KIDNEY DISEASE DATASET - EXPLORATION REPORT
+
+DATASET OVERVIEW:
+- Total patients: 200
+- Total features: 29
+- Target variable: 'class' (ckd vs notckd)
+- Missing values: None (excellent data quality!)
+
+CLASS DISTRIBUTION:
+- CKD patients: 128 (64%)
+- Non-CKD patients: 72 (36%)
+- Slightly imbalanced but manageable
+
+KEY FEATURES IDENTIFIED:
+- Blood pressure measurements
+- Laboratory values (glucose, albumin, etc.)
+- Clinical indicators (hypertension, diabetes, anemia)
+- Age groups
+- Kidney function measures
+
+DATA QUALITY ASSESSMENT:
+No missing values
+Good sample size
+Clear target variable
+Mixed data types need preprocessing
+Some categorical variables need encoding
