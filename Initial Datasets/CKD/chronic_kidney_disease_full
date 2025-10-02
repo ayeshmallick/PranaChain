@@ -1,0 +1,254 @@
+% 1. Title: Early stage of Indians Chronic Kidney Disease(CKD)
+%
+% 2. Source Information:
+%   (a) Source: 
+%			Dr.P.Soundarapandian.M.D.,D.M
+%		     (Senior Consultant Nephrologist), 
+%			Apollo  Hospitals, 
+%			Managiri,
+%			Madurai Main Road, 
+%			Karaikudi,
+%			Tamilnadu,
+%			India.
+%   (b) Creator: 
+%			L.Jerlin Rubini(Research Scholar)
+%			Alagappa University
+%			EmailId   :jel.jerlin@gmail.com
+%			ContactNo :+91-9597231281
+%   (c) Guided by: 
+%			Dr.P.Eswaran Assistant Professor,
+%			Department of Computer Science and Engineering,
+%			Alagappa University,
+%			Karaikudi,
+%			Tamilnadu,
+%			India.
+%			Emailid:eswaranperumal@gmail.com
+%   (d) Date     : july 2015
+%
+% 3.Relevant Information:
+%			age		-	age	
+%			bp		-	blood pressure
+%			sg		-	specific gravity
+%			al		-   	albumin
+%			su		-	sugar
+%			rbc		-	red blood cells
+%			pc		-	pus cell
+%			pcc		-	pus cell clumps
+%			ba		-	bacteria
+%			bgr		-	blood glucose random
+%			bu		-	blood urea
+%			sc		-	serum creatinine
+%			sod		-	sodium
+%			pot		-	potassium
+%			hemo		-	hemoglobin
+%			pcv		-	packed cell volume
+%			wc		-	white blood cell count
+%			rc		-	red blood cell count
+%			htn		-	hypertension
+%			dm		-	diabetes mellitus
+%			cad		-	coronary artery disease
+%			appet		-	appetite
+%			pe		-	pedal edema
+%			ane		-	anemia
+%			class		-	class	
+%
+% 4.Number of Instances:  400 (250 CKD, 150 notckd)
+%
+% 5.Number of Attributes: 24 + class = 25(11 numeric,14 nominal) 
+%
+% 6.Attribute Information :
+% 	1.Age(numerical)
+%  	  	age in years
+% 	2.Blood Pressure(numerical)
+%       	bp in mm/Hg
+% 	3.Specific Gravity(nominal)
+%	  	sg - (1.005,1.010,1.015,1.020,1.025)
+% 	4.Albumin(nominal)
+%		al - (0,1,2,3,4,5)
+% 	5.Sugar(nominal)
+%		su - (0,1,2,3,4,5)
+% 	6.Red Blood Cells(nominal)
+%		rbc - (normal,abnormal)
+% 	7.Pus Cell (nominal)
+%		pc - (normal,abnormal)
+% 	8.Pus Cell clumps(nominal)
+%		pcc - (present,notpresent)
+% 	9.Bacteria(nominal)
+%		ba  - (present,notpresent)
+% 	10.Blood Glucose Random(numerical)		
+%		bgr in mgs/dl
+% 	11.Blood Urea(numerical)	
+%		bu in mgs/dl
+% 	12.Serum Creatinine(numerical)	
+%		sc in mgs/dl
+% 	13.Sodium(numerical)
+%		sod in mEq/L
+% 	14.Potassium(numerical)	
+%		pot in mEq/L
+% 	15.Hemoglobin(numerical)
+%		hemo in gms
+% 	16.Packed  Cell Volume(numerical)
+% 	17.White Blood Cell Count(numerical)
+%		wc in cells/cumm
+% 	18.Red Blood Cell Count(numerical)	
+%		rc in millions/cmm
+% 	19.Hypertension(nominal)	
+%		htn - (yes,no)
+% 	20.Diabetes Mellitus(nominal)	
+%		dm - (yes,no)
+% 	21.Coronary Artery Disease(nominal)
+%		cad - (yes,no)
+% 	22.Appetite(nominal)	
+%		appet	 - (good,poor)
+% 	23.Pedal Edema(nominal)
+%		pe - (yes,no)	
+% 	24.Anemia(nominal)
+%		ane	- (yes,no)
+% 	25.Class (nominal)		
+%		class	 - (ckd,notckd)
+%
+%7. Missing Attribute Values: Yes(Denoted by "?")
+%
+%8. Class Distribution: ( 2 classes)
+%    		Class 	  Number of instances
+%    		ckd          	  250
+%    		notckd       	  150   
+%	
+@relation Chronic_Kidney_Disease
+
+@attribute 'age' numeric
+@attribute 'bp'  numeric
+@attribute 'sg' {1.005,1.010,1.015,1.020,1.025}
+@attribute 'al' {0,1,2,3,4,5}  
+@attribute 'su' {0,1,2,3,4,5}  
+@attribute 'rbc' {normal,abnormal}
+@attribute 'pc' {normal,abnormal} 
+@attribute 'pcc' {present,notpresent}
+@attribute 'ba' {present,notpresent}
+@attribute 'bgr'  numeric
+@attribute 'bu' numeric
+@attribute 'sc' numeric
+@attribute 'sod' numeric
+@attribute 'pot' numeric
+@attribute 'hemo' numeric
+@attribute 'pcv' numeric
+@attribute 'wbcc' numeric
+@attribute 'rbcc' numeric
+@attribute 'htn' {yes,no}
+@attribute 'dm' {yes,no}
+@attribute 'cad' {yes,no}
+@attribute 'appet' {good,poor}
+@attribute 'pe' {yes,no} 
+@attribute 'ane' {yes,no}
+@attribute 'class' {ckd,notckd}
+
+@data
+48,80,1.020,1,0,?,normal,notpresent,notpresent,121,36,1.2,?,?,15.4,44,7800,5.2,yes,yes,no,good,no,no,ckd
+7,50,1.020,4,0,?,normal,notpresent,notpresent,?,18,0.8,?,?,11.3,38,6000,?,no,no,no,good,no,no,ckd
+62,80,1.010,2,3,normal,normal,notpresent,notpresent,423,53,1.8,?,?,9.6,31,7500,?,no,yes,no,poor,no,yes,ckd
+48,70,1.005,4,0,normal,abnormal,present,notpresent,117,56,3.8,111,2.5,11.2,32,6700,3.9,yes,no,no,poor,yes,yes,ckd
+51,80,1.010,2,0,normal,normal,notpresent,notpresent,106,26,1.4,?,?,11.6,35,7300,4.6,no,no,no,good,no,no,ckd
+60,90,1.015,3,0,?,?,notpresent,notpresent,74,25,1.1,142,3.2,12.2,39,7800,4.4,yes,yes,no,good,yes,no,ckd
+68,70,1.010,0,0,?,normal,notpresent,notpresent,100,54,24.0,104,4.0,12.4,36,?,?,no,no,no,good,no,no,ckd
+24,?,1.015,2,4,normal,abnormal,notpresent,notpresent,410,31,1.1,?,?,12.4,44,6900,5,no,yes,no,good,yes,no,ckd
+52,100,1.015,3,0,normal,abnormal,present,notpresent,138,60,1.9,?,?,10.8,33,9600,4.0,yes,yes,no,good,no,yes,ckd
+53,90,1.020,2,0,abnormal,abnormal,present,notpresent,70,107,7.2,114,3.7,9.5,29,12100,3.7,yes,yes,no,poor,no,yes,ckd
+50,60,1.010,2,4,?,abnormal,present,notpresent,490,55,4.0,?,?,9.4,28,?,?,yes,yes,no,good,no,yes,ckd
+63,70,1.010,3,0,abnormal,abnormal,present,notpresent,380,60,2.7,131,4.2,10.8,32,4500,3.8,yes,yes,no,poor,yes,no,ckd
+68,70,1.015,3,1,?,normal,present,notpresent,208,72,2.1,138,5.8,9.7,28,12200,3.4,yes,yes,yes,poor,yes,no,ckd
+68,70,?,?,?,?,?,notpresent,notpresent,98,86,4.6,135,3.4,9.8,?,?,?,yes,yes,yes,poor,yes,no,ckd
+68,80,1.010,3,2,normal,abnormal,present,present,157,90,4.1,130,6.4,5.6,16,11000,2.6,yes,yes,yes,poor,yes,no,ckd
+40,80,1.015,3,0,?,normal,notpresent,notpresent,76,162,9.6,141,4.9,7.6,24,3800,2.8,yes,no,no,good,no,yes,ckd
+47,70,1.015,2,0,?,normal,notpresent,notpresent,99,46,2.2,138,4.1,12.6,?,?,?,no,no,no,good,no,no,ckd
+47,80,?,?,?,?,?,notpresent,notpresent,114,87,5.2,139,3.7,12.1,?,?,?,yes,no,no,poor,no,no,ckd
+60,100,1.025,0,3,?,normal,notpresent,notpresent,263,27,1.3,135,4.3,12.7,37,11400,4.3,yes,yes,yes,good,no,no,ckd
+62,60,1.015,1,0,?,abnormal,present,notpresent,100,31,1.6,?,?,10.3,30,5300,3.7,yes,no,yes,good,no,no,ckd
+61,80,1.015,2,0,abnormal,abnormal,notpresent,notpresent,173,148,3.9,135,5.2,7.7,24,9200,3.2,yes,yes,yes,poor,yes,yes,ckd
+60,90,?,?,?,?,?,notpresent,notpresent,?,180,76,4.5,?,10.9,32,6200,3.6,yes,yes,yes,good,no,no,ckd
+48,80,1.025,4,0,normal,abnormal,notpresent,notpresent,95,163,7.7,136,3.8,9.8,32,6900,3.4,yes,no,no,good,no,yes,ckd
+21,70,1.010,0,0,?,normal,notpresent,notpresent,?,?,?,?,?,?,?,?,?,no,no,no,poor,no,yes,ckd
+42,100,1.015,4,0,normal,abnormal,notpresent,present,?,50,1.4,129,4.0,11.1,39,8300,4.6,yes,no,no,poor,no,no,ckd
+61,60,1.025,0,0,?,normal,notpresent,notpresent,108,75,1.9,141,5.2,9.9,29,8400,3.7,yes,yes,no,good,no,yes,ckd
+75,80,1.015,0,0,?,normal,notpresent,notpresent,156,45,2.4,140,3.4,11.6,35,10300,4,yes,yes,no,poor,no,no,ckd
+69,70,1.010,3,4,normal,abnormal,notpresent,notpresent,264,87,2.7,130,4.0,12.5,37,9600,4.1,yes,yes,yes,good,yes,no,ckd
+75,70,?,1,3,?,?,notpresent,notpresent,123,31,1.4,?,?,?,?,?,?,no,yes,no,good,no,no,ckd
+68,70,1.005,1,0,abnormal,abnormal,present,notpresent,?,28,1.4,?,?,12.9,38,?,?,no,no,yes,good,no,no,ckd
+?,70,?,?,?,?,?,notpresent,notpresent,93,155,7.3,132,4.9,?,?,?,?,yes, yes,no,good,no,no,ckd
+73,90,1.015,3,0,?,abnormal,present,notpresent,107,33,1.5,141,4.6,10.1,30,7800,4,no,no,no,poor,no,no,ckd
+61,90,1.010,1,1,?,normal,notpresent,notpresent,159,39,1.5,133,4.9,11.3,34,9600,4.0,yes,yes,no,poor,no,no,ckd
+60,100,1.020,2,0,abnormal,abnormal,notpresent,notpresent,140,55,2.5,?,?,10.1,29,?,?,yes,no,no,poor,no,no,ckd
+70,70,1.010,1,0,normal,?,present,present,171,153,5.2,?,?,?,?,?,?,no,yes,no,poor,no,no,ckd
+65,90,1.020,2,1,abnormal,normal,notpresent,notpresent,270,39,2.0,?,?,12.0,36,9800,4.9,yes,yes,no,poor,no,yes,ckd
+76,70,1.015,1,0,normal,normal,notpresent,notpresent,92,29,1.8,133,3.9,10.3,32,?,?,yes,no,no,good,no,no,ckd
+72,80,?,?,?,?,?,notpresent,notpresent,137,65,3.4,141,4.7,9.7,28,6900,2.5,yes,yes,no,poor,no,yes,ckd	
+69,80,1.020,3,0,abnormal,normal,notpresent,notpresent,?,103,4.1,132,5.9,12.5,?,?,?,yes,no,no,good,no,no,ckd
+82,80,1.010,2,2,normal,?,notpresent,notpresent,140,70,3.4,136,4.2,13.0,40,9800,4.2,yes,yes,no,good,no,no,ckd
+46,90,1.010,2,0,normal,abnormal,notpresent,notpresent,99,80,2.1,?,?,11.1,32,9100,4.1,yes,no,	no,good,no,no,ckd
+45,70,1.010,0,0,?,normal,notpresent,notpresent,?,20,0.7,?,?,?,?,?,?,no,no,no,good,yes,no,ckd
+47,100,1.010,0,0,?,normal,notpresent,notpresent,204,29,1.0,139,4.2,9.7,33,9200,4.5,yes,no,no,good,no,yes,ckd
+35,80,1.010,1,0,abnormal,?,notpresent,notpresent,79,202,10.8,134,3.4,7.9,24,7900,3.1,no,yes,no,good,no,no,ckd
+54,80,1.010,3,0,abnormal,abnormal,notpresent,notpresent,207,77,6.3,134,4.8,9.7,28,?,?,yes,yes,no,poor,yes,no,ckd
+54,80,1.020,3,0,?,abnormal,notpresent,notpresent,208,89,5.9,130,4.9,9.3,?,?,?,yes,yes,no,poor,yes,no,ckd
+48,70,1.015,0,0,?,normal,notpresent,notpresent,124,24,1.2,142,4.2,12.4,37,6400,4.7,no,yes,no,good,no,no,ckd
+11,80,1.010,3,0,?,normal,notpresent,notpresent,?,17,0.8,?,?,15.0,45,8600,?,no,no,no,good,no,no,ckd
+73,70,1.005,0,0,normal,normal,notpresent,notpresent,70,32,0.9,125,4.0,10.0,29,18900,3.5,yes,yes,no,good,yes,no,ckd
+60,70,1.010,2,0,normal,abnormal,present,notpresent,144,72,3.0,?,?,9.7,29,21600,3.5,yes,yes,no,poor,no,yes,ckd
+53,60,?,?,?,?,?,notpresent,notpresent,91,114,3.25,142,4.3,8.6,28,11000,3.8,yes,yes,no,poor,yes,yes,ckd
+54,100,1.015,3,0,?,normal,present,notpresent,162,66,1.6,136,4.4,10.3,33,?,?,yes,yes,no,poor,yes,no,ckd
+53,90,1.015,0,0,?,normal,notpresent,notpresent,?,38,2.2,?,?,10.9,34,4300,3.7,no,no,no,poor,no,yes,ckd
+62,80,1.015,0,5,?,?,notpresent,notpresent,246,24,1.0,?,?,13.6,40,8500,4.7,yes,yes,no,good,no,no,ckd
+63,80,1.010,2,2,normal,?,notpresent,notpresent,?,?,3.4,136,4.2,13.0,40,9800,4.2,yes,no,yes,good,no,no,ckd
+35,80,1.005,3,0,abnormal,normal,notpresent,notpresent,?,?,?,?,?,9.5,28,?,?,no,no,no,good,yes,no,ckd
+76,70,1.015,3,4,normal,abnormal,present,notpresent,?,164,9.7,131,4.4,10.2,30,11300,3.4,yes,yes,yes,poor,yes,no,ckd
+76,90,?,?,?,?,normal,notpresent,notpresent,93,155,7.3,132,4.9,?,?,?,?,yes,yes,yes,poor,no,no,ckd
+73,80,1.020,2,0,abnormal,abnormal,notpresent,notpresent,253,142,4.6,138,5.8,10.5,33,7200,4.3,yes,yes,yes,good,no,no,ckd
+59,100,?,?,?,?,?,notpresent,notpresent,?,96,6.4,?,?,6.6,?,?,?,yes,yes,no,good,no,yes,ckd
+67,90,1.020,1,0,?,abnormal,present,notpresent,141,66,3.2,138,6.6,?,?,?,?,yes,no,no,good,no,no,ckd
+67,80,1.010,1,3,normal,abnormal,notpresent,notpresent,182,391,32.0,163,39.0,?,?,?,?,no,no,no,good,yes,no,ckd
+15,60,1.020,3,0,?,normal,notpresent,notpresent,86,15,0.6,138,4.0,11.0,33,7700,3.8,yes,yes,no,good,no,no,ckd
+46,70,1.015,1,0,abnormal,normal,notpresent,notpresent,150,111,6.1,131,3.7,7.5,27,?,?,no,no,no,good,no,yes,ckd
+55,80,1.010,0,0,?,normal,notpresent,notpresent,146,?,?,?,?,9.8,?,?,?,no,no,	no,good,no,no,ckd
+44,90,1.010,1,0,?,normal,notpresent,notpresent,?,20,1.1,?,?,15.0,48,?,?,no,	no,no,good,no,no,ckd
+67,70,1.020,2,0,abnormal,normal,notpresent,notpresent,150,55,1.6,131,4.8,?,	?,?,?,yes,yes,no,good,yes,no,ckd
+45,80,1.020,3,0,normal,abnormal,notpresent,notpresent,425,?,?,?,?,?,?,?,?,no,no,no,poor,no,no,ckd
+65,70,1.010,2,0,?,normal,present,notpresent,112,73,3.3,?,?,10.9,37,?,?,no,no,no,good,no,no,ckd
+26,70,1.015,0,4,?,normal,notpresent,notpresent,250,20,1.1,?,?,15.6,52,6900,6.0,no,yes,no,good,no,no,ckd,
+61,80,1.015,0,4,?,normal,notpresent,notpresent,360,19,0.7,137,4.4,15.2,44,8300,5.2,yes,yes,no,good,no,no,ckd
+46,60,1.010,1,0,normal,normal,notpresent,notpresent,163,92,3.3,141,4.0,9.8,28,14600,3.2,yes,yes,no,good,no,no,ckd
+64,90,1.010,3,3,?,abnormal,present,notpresent,?,35,1.3,?,?,10.3,?,?,?,yes,yes,no,good,yes,no,ckd,
+?,100,1.015,2,0,abnormal,abnormal,notpresent,notpresent,129,107,6.7,132,4.4,4.8,14,6300,?,yes,no,no,good,yes,yes,ckd
+56,90,1.015,2,0,abnormal,abnormal,notpresent,notpresent,129,107,6.7,131,4.8,9.1,29,6400,3.4,yes,no,no,good,no,no,ckd
+5,?,1.015,1,0,?,normal,notpresent,notpresent,?,16,0.7,138,3.2,8.1,?,?,?,no,no,no,good,no,yes,ckd
+48,80,1.005,4,0,abnormal,abnormal,notpresent,present,133,139,8.5,132,5.5,10.3,36,	6200,4,no,yes,no,good,yes,no,ckd
+67,70,1.010,1,0,?,normal,notpresent,notpresent,102,48,3.2,137,5.0,11.9,34,7100,3.7,yes,yes,no,good,yes,no,ckd
+70,80,?,?,?,?,?,notpresent,notpresent,158,85,3.2,141,3.5,10.1,30,?,?,yes,no,no,good,yes,no,ckd
+56,80,1.010,1,0,?,normal,notpresent,notpresent,165,55,1.8,?,?,13.5,40,11800,5.0,yes,yes,no,poor,yes,no,ckd
+74,80,1.010,0,0,?,normal,notpresent,notpresent,132,98,2.8,133,5.0,10.8,31,9400,3.8,yes,yes,no,good,no,no,ckd
+45,90,?,?,?,?,?,notpresent,notpresent,360,45,2.4,128,4.4,8.3,29,5500,3.7,yes,yes,no,good,no,no,ckd
+38,70,?,?,?,?,?,notpresent,notpresent,104,77,1.9,140,3.9,?,?,?,?,yes,no,no,poor,yes,no,ckd
+48,70,1.015,1,0,normal,normal,notpresent,notpresent,127,19,1.0,134,3.6,?,?,?,?,yes,yes,no,good,no,no,ckd
+59,70,1.010,3,0,normal,abnormal,notpresent,notpresent,76,186,15,135,7.6,7.1,22,3800,2.1,yes,no,no,poor,yes,yes,ckd
+70,70,1.015,2,?,?,?,notpresent,notpresent,?,46,1.5,?,?,9.9,?,?,?,no,yes,no,poor,yes,no,ckd
+56,80,?,?,?,?,?,notpresent,notpresent,415,37,1.9,?,?,?,?,?,?,no,yes,no,good,no,no,ckd
+70,100,1.005,1,0,normal,abnormal,present,notpresent,169,47,2.9,?,?,11.1,32,5800,5,yes,yes,no,poor,no,no,ckd
+58,110,1.010,4,0,?,normal,notpresent,notpresent,251,52,2.2,?,?,?,?,13200,4.7,yes,	yes,no,good,no,no,ckd
+50,70,1.020,0,0,?,normal,notpresent,notpresent,109,32,1.4,139,4.7,?,?,?,?,no,no,no,poor,no,no,ckd
+63,100,1.010,2,2,normal,normal,notpresent,present,280,35,3.2,143,3.5,13.0,40,9800,4.2,yes,no,yes,good,no,no,ckd
+56,70,1.015,4,1,abnormal,normal,notpresent,notpresent,210,26,1.7,136,3.8,16.1,52,12500,5.6,no,no,no,good,no,no,ckd
+71,70,1.010,3,0,normal,abnormal,present,present,219,82,3.6,133,4.4,10.4,33,5600,3.6,yes,yes,yes,good,no,no,ckd
+73,100,1.010,3,2,abnormal,abnormal,present,notpresent,295,90,5.6,140,2.9,9.2,30,7000,3.2,yes,yes,yes,poor,no,no,ckd
+65,70,1.010,0,0,?,normal,notpresent,notpresent,93,66,1.6,137,4.5,11.6,36,11900,3.9,no,yes,no,good,no,no,ckd
+62,90,1.015,1,0,?,normal,notpresent,notpresent,94,25,1.1,131,3.7,?,?,?,?,yes,no,no,good,yes,yes,ckd
+60,80,1.010,1,1,?,normal,notpresent,notpresent,172,32,2.7,?,?,11.2,36,?,?,no,yes,yes,poor,no,no,ckd
+65,60,1.015,1,0,?,normal,notpresent,notpresent,91,51,2.2,132,3.8,10.0,32,9100,4.0,yes,yes,no,poor,yes,no,ckd
+50,140,?,?,?,?,?,notpresent,notpresent,101,106,6.5,135,4.3,6.2,18,5800,2.3,yes,yes,no,poor,no,yes,ckd
+56,180,?,0,4,?,abnormal,notpresent,notpresent,298,24,1.2,139,3.9,11.2,32,10400,4.2,yes,yes,no,poor,yes,no,ckd
+34,70,1.015,4,0,abnormal,abnormal,notpresent,notpresent,153,22,0.9,133,3.8,?,?,?,?,no,no,no,good,yes,no,ckd
+71,90,1.015,2,0,?,abnormal,present,present,88,80,4.4,139,5.7,11.3,33,10700,3.9,no,no,no,good,no,no,ckd
+17,60,1.010,0,0,?,normal,notpresent,notpresent,92,32,2.1,141,4.2,13.9,52,7000,?,no,no,no,good,no,no,ckd
+76,70,1.015,2,0,normal,abnormal,present,notpresent,226,217,10.2,?,?,10.2,36,12700,4.2,yes,no,no,poor,yes,yes,ckd
+55,90,?,?,?,?,?,notpresent,notpresent,143,88,2.0,?,?,?,?,?,?,yes,yes,no,poor,yes,no,ckd
+65,80,1.015,0,0,?,normal,notpresent,notpresent,115,32,11.5,139,4.0,14.1,42,6800,5.2,no,no,no,good,no,no,ckd
+50,90,?,?,?,?,?,notpresent,notpresent,89,118,6.1,127,4.4,6.0,17,6500,?,yes,yes,no,good,yes,yes,ckd
+55,100,1.015,1,4,normal,?,notpresent,notpresent,297,53,2.8,139,4.5,11.2,34,13600,4.4,yes,yes,no,good,no,no,ckd
+45,80,1.015,0,0,?,abnormal,not
