@@ -1,0 +1,30 @@
+name,role,type,demographic,description,units,missing_values
+bp (Diastolic),Feature,Integer,,,,no
+bp limit,Feature,Integer,,,,no
+sg,Feature,Categorical,,,,no
+al,Feature,Categorical,,,,no
+class,Target,Binary,,,,no
+rbc,Feature,Integer,,,,no
+su,Feature,Categorical,,,,no
+pc,Feature,Integer,,,,no
+pcc,Feature,Integer,,,,no
+ba,Feature,Integer,,,,no
+bgr,Feature,Categorical,,,,no
+bu,Feature,Categorical,,,,no
+sod,Feature,Categorical,,,,no
+sc,Feature,Categorical,,,,no
+pot,Feature,Categorical,,,,no
+hemo,Feature,Categorical,,,,no
+pcv,Feature,Categorical,,,,no
+rbcc,Feature,Categorical,,,,no
+wbcc,Feature,Categorical,,,,no
+htn,Feature,Integer,,,,no
+dm,Feature,Integer,,,,no
+cad,Feature,Integer,,,,no
+appet,Feature,Integer,,,,no
+pe,Feature,Integer,,,,no
+ane,Feature,Integer,,,,no
+grf,Feature,Categorical,,,,no
+stage,Feature,Categorical,,,,no
+affected,Feature,Integer,,,,no
+age,Feature,Categorical,,,,no

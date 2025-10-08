@@ -1,0 +1,23 @@
+Key,Value
+uci_id,857
+name,Risk Factor Prediction of Chronic Kidney Disease
+repository_url,https://archive.ics.uci.edu/dataset/857/risk+factor+prediction+of+chronic+kidney+disease
+data_url,https://archive.ics.uci.edu/static/public/857/data.csv
+abstract,Chronic kidney disease (CKD) is an increasing medical issue that declines the productivity of renal capacities and subsequently damages the kidneys.
+area,Health and Medicine
+tasks,"['Classification', 'Regression']"
+characteristics,['Multivariate']
+num_instances,200
+num_features,28
+feature_types,['Real']
+demographics,[]
+target_col,['class']
+index_col,
+has_missing_values,no
+missing_values_symbol,
+year_of_dataset_creation,2020
+last_updated,Fri Mar 08 2024
+dataset_doi,10.24432/C5WP64
+creators,"['Md. Ashiqul Islam', 'Shamima Akter']"
+intro_paper,"{'ID': 268, 'type': 'NATIVE', 'title': 'Risk Factor Prediction of Chronic Kidney Disease based on Machine Learning Algorithms', 'authors': 'M. Islam, S. Akter, M. Hossen, Sadia Ahmed Keya, Sadia Afrin Tisha, Shahed Hossain', 'venue': 'International Conferences on Information Science and System', 'year': 2020, 'journal': None, 'DOI': None, 'URL': 'https://www.semanticscholar.org/paper/a4b90dd7b9dfaffa9eff1efc6555bbce62a963d7', 'sha': None, 'corpus': None, 'arxiv': None, 'mag': None, 'acl': None, 'pmid': None, 'pmcid': None}"
+additional_info,"{'summary': 'This dataset is real Bangladeshi patient data. The dataset is collected from Enam Medical College, Savar, Dhaka, Bangladesh.\n', 'purpose': None, 'funded_by': None, 'instances_represent': None, 'recommended_data_splits': None, 'sensitive_data': None, 'preprocessing_description': 'This dataset is not pre-processed, if you want to apply a Machine learning Algorithm at first you have to need to pre-process the data', 'variable_info': '1. bp(Diastolic)\n2. bp limit\n3. sg\n4. al\n5. class\n6. rbc\n7. su\n8. pc\n9. pcc\n10. ba\n11.bgr\n12. bu\n13. sod\n14. sc\n15. pot\n16. hemo\n17. pcv\n18. rbcc\n19. wbcc\n20. htn\n21. dm\n22. cad\n23. appet\n24. pe\n25. ane\n26. grf\n27. stage\n28. affected\n29. age', 'citation': ""M. A. Islam, S. Akter, M. S. Hossen, S. A. Keya, S. A. Tisha and S. Hossain, 'Risk Factor Prediction of Chronic Kidney Disease based on Machine Learning Algorithms,' 2020 3rd International Conference on Intelligent Sustainable Systems (ICISS), Thoothukudi, India, 2020, pp. 952-957, doi: 10.1109/ICISS49785.2020.9315878.""}"
