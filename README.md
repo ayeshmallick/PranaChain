@@ -444,7 +444,7 @@ For comprehensive usage instructions, refer to the [User Manual](docs/USER_MANUA
 |------|------|------------------|------------|
 | **Rithish Ashwin Suresh Kumar** | Team Lead & Blockchain Architect | Blockchain security, Agile management, Backend integration | 110182109 |
 | **Shaurya Parshad** | ML Scientist & SDE | UI design, Backend development, CKD prediction model | 110191553 |
-| **[Name TBD]** | ML Engineer & Data Scientist | Data preprocessing, Model training | 110191780 |
+| **Timothy Eric Dare James Dare** | ML Engineer & Data Scientist | Data preprocessing, Model training | 110191780 |
 | **Sandeep Kapoor** | ML Engineer & Data Scientist | Diabetes & Heart Disease models, Feature engineering | 110184820 |
 | **Ayeshkant Mallick** | ML Engineer & Algorithm Specialist | Algorithm optimization, SHAP implementation | 110190414 |
 
@@ -550,7 +550,6 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 **✨ PranaChain - Empowering Patients, Enabling Doctors, Advancing Healthcare ✨**
 
-Made with ❤️ by Team R.O.B.O.T.S
 
 [⬆ Back to Top](#pranachain-medical-ai-platform)
 
